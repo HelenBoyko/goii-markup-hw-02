@@ -56,7 +56,7 @@ body {
     color: var(--accent-color);
 }
 
-.menu-link .current {
+.menu-link.current {
     color: var(--accent-color);
 }
 
