@@ -2,10 +2,11 @@
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
     --accent-color: #404BBF;
+    --primary-bg-color: #F4F4FD;
 }
 
 body {
-    background: #F4F4FD;
+    background: var(--primary-bg-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -15,39 +16,11 @@ body {
     color: var(--primary-text-color);
 }
 
-header {
+/* Header */
+.header {
     background: #FFFFFF;
 }
 
-h1 {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    /* text-align: center; */
-    letter-spacing: 0.02em;
-}
-
-h2,
-h3 {
-    color: var(--title-text-color);
-}
-
-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-}
-
-/* Header */
 .list {
     list-style: none;
 }
@@ -99,6 +72,10 @@ h3 {
 }
 
 .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 
@@ -120,34 +97,47 @@ h3 {
 
 /* MAIN INDEX*/
 /* Sections */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+}
+
+.subsection-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
 .features,
 .portfolio {
     background-color: #FFFFFF;
 }
 
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--primary-bg-color);
 }
 
 .team li {
     background-color: #FFFFFF;
-    text-align: center;
-}
 
-.features-title,
-.team-title {
-    text-align: center;
 }
 
 /* MAIN PORTFOLIO */
 .portfolio-buttons {
-    background: #F4F4FD;
+    background: var(--primary-bg-color);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: #4D5AE5;
+    cursor: pointer;
 }
 
 .portfolio-buttons:hover {
