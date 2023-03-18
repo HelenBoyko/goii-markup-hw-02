@@ -6,7 +6,7 @@
 }
 
 body {
-    background: var(--primary-bg-color);
+    background-color: var(--primary-bg-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 16px;
@@ -30,14 +30,14 @@ body {
 }
 
 .logo-header {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5
+    color: #4d5ae5;
 }
 
 .logo-color {
@@ -54,15 +54,11 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-    color: var(--accent-color);
-}
-
-.menu-link {
-    color: #2E2F42;
+    color: #404BBF;
 }
 
 .menu-link.current {
-    color: #2e2f42;
+    color: var(--accent-color);
 }
 
 .address-block {
@@ -150,7 +146,8 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.team li {
+.team-card {
+    width: 264px;
     background-color: #FFFFFF;
 
 }
@@ -174,9 +171,8 @@ body {
 }
 
 
-.gallery img {
+.gallery {
     width: 360px;
-    height: 300px;
 }
 
 /* FOOTER */
