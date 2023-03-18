@@ -56,6 +56,10 @@ body {
     color: var(--accent-color);
 }
 
+.menu-link .current {
+    color: var(--accent-color);
+}
+
 .contact {
     font-style: normal;
     color: #434455;
